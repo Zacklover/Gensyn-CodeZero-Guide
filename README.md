@@ -39,3 +39,19 @@ source .venv/bin/activate
 
 # 7. Launch (you're back online!)
 ./run_rl_swarm.sh
+
+Common FixesIssue
+Fix
+"Terminated" error
+→ See troubleshooting section below
+Out of memory
+Use a VPS with ≥16GB RAM or add swap
+Node not submitting
+Make sure port 3000 & 5000 are open + wallet configured
+
+Troubleshooting "Terminated" ErrorRun this to see real logs:bash
+
+tail -f ~/.gensyn/logs/*.log
+
+Most fixes: restart screen session + re-run ./run_rl_swarm.shMade with  by the Gswarm
+
